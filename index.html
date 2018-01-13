@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="welcome">
+		<form id="playerName">
+			<p>Enter Your Name:</p>
+			<input type="text" name="playerName">
+		</form>
+	</div>
+	<hr>
+		
+	<div id="playerChoice">
+		<button>
+			<p id="choosePlayerOne">Choose Red</p>
+		</button>
+		<button>
+			<p id="choosePlayerTwo">Choose Blue</p>
+		</button>
+	</div>
+
+	<hr>
+
+	<div id="playerOnePane">
+		<p>Ready Player One</p>
+		<p>Wins:</p>
+		<p>Losses:</p>
+		<p>Ties:</p>
+
+		<p>The Combat!</p>
+		<div>
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissors">Scissors</button>
+		</div>
+		
+		<p>The Trash Talk!</p>
+		<form  id="chatFormPlayerOne">
+			<input id="p1text" type="text" name="trashTalkHere!">
+			<button id="p1send">Send</button>
+		</form>
+
+	</div>
+
+	<hr>
+
+	<div id="playerTwoPane">
+		<p>Ready Player Two</p>
+		<p>Wins:</p>
+		<p>Losses:</p>
+		<p>Ties:</p>
+
+		<p>The Combat!</p>
+		<div>
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissors">Scissors</button>
+		</div>
+
+		<p>The Trash Talk!</p>
+		<form id="chatFormPlayerTwo">
+			<input id="p2text" type="text" name="trashTalkHere!">
+			<button id="p2send">Send</button>
+		</form>
+
+	</div>
+
+	<hr>
+
+	<div id="chatWindow">
+		<p>Trash Talk Here!</p>
+		<div id="messages"></div>
+	</div>
+
+	<hr>
+
+	<div id="resetGame">
+		<p>Reset the game</p>
+		<button>Reset</button>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+
+	<script src="assets/javascript/rps.js"></script>
+	
+</body>
+</html>
